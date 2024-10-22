@@ -1,0 +1,13 @@
+In this study, the DNABERT-2 model is further improved to enhance promoter prediction performance. Specifically, we designed and trained the following five model variants:
+
+DNABERT-2_BASE: A basic model based on BERT, which encodes gene sequences without additional feature extraction modules.
+
+DNABERT-2_CNN: Combines Convolutional Neural Networks (CNN) with the BERT model to extract local features from gene sequences, enhancing the model's ability to capture short-range dependencies.
+
+DNABERT-2_BiLSTM: Incorporates Bidirectional Long Short-Term Memory (BiLSTM) networks into the BERT model to improve long-range dependency modeling, particularly for handling distant relationships in gene sequences.
+
+DNABERT-2_CNN_BiLSTM(MAX): Integrates CNN and BiLSTM into the BERT model and uses a max pooling layer to optimize the feature extraction process, improving sensitivity to local information and long-range dependencies.
+
+DNABERT-2_CNN_BiLSTM(Avg): Similar to DNABERT-2_CNN_BiLSTM(MAX), but uses an average pooling layer, balancing the importance of features during extraction to enhance the model's robustness.
+
+These models are designed with different architectures to optimize local and long-range feature extraction in gene sequences, aiming to improve promoter prediction performance, especially for promoters related to hearing loss.
