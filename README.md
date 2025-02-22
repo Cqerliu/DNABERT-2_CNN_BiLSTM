@@ -23,7 +23,16 @@ In this project, we designed and trained five model variants based on BERT, comb
 - **sample_data**: A sample dataset is provided for running and testing the models.
   - The dataset contains gene sequences relevant to the promoter prediction task, with sequence lengths of 300 bp and 600 bp, which can be used for training and validating the models.
 
+
+- **raw_data**: This folder contains the raw data used for model training and testing.
+  - It includes Excel worksheets with the following datasets:
+  -Train: The training set used to train the model.
+  -Dev: The development (validation) set used to evaluate the model's performance during training.
+  -Test: The test set used to evaluate the model's final performance.
+  -These datasets include hearing loss-related gene promoter sequences, as well as additional sequences from other diseases (e.g., breast cancer and cervical cancer) to support cross-disease training.
+
 ## Running Instructions
 1. Extract the `model.rar` file.
 2. Follow the running instructions provided in each model folder to set up the environment and run the training or testing scripts.
 3. Use the dataset provided in the `sample_data` folder to train and test the models.
+4. For the raw data, refer to the raw_data folder to access the relevant training, validation, and test sets required for fine-tuning the models.
